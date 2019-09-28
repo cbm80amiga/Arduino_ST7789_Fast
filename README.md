@@ -1,6 +1,8 @@
 # Arduino_ST7789_Fast
 Fast SPI library for the ST7789 240x240 IPS display
 
+YouTube video: https://youtu.be/GciLKcWQZK4
+
 Significantly optimized for 16MHz AVR Arduino boards (2.5-5x faster than other libraries)
 
 Achieved 6.9Mbps SPI transfer rate (at DIV2/16MHz clock)
