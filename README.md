@@ -18,7 +18,7 @@ Extra features:
 - enableDisplay()
 - idleDisplay() - saves power by limiting colors to 3 bit mode (8 colors)
 - resetDisplay() - software reset
-- partialDisplay() and setPartArea() - limiting display range for power saving
+- partialDisplay() and setPartArea() - limiting display area for power saving
 - setScrollArea() and setScroll(uint16_t vsp) - smooth vertical scrolling
-- drawImage() from RAM
-- drawImage() from flash (PROGMEM)
+- fast drawImage() from RAM
+- fast drawImage() from flash (PROGMEM)
