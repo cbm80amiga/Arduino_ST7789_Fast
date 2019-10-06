@@ -611,4 +611,11 @@ void Arduino_ST7789::rgbWheel(int idx, uint8_t *_r, uint8_t *_g, uint8_t *_b)
   }
 } 
 
+uint16_t Arduino_ST7789::rgbWheel(int idx)
+{
+  uint8_t r,g,b;
+  rgbWheel(idx, &r,&g,&b);
+  return RGBto565(r,g,b);
+}
+
 // ------------------------------------------------

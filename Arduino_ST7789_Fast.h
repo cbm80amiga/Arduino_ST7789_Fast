@@ -86,9 +86,11 @@ class Arduino_ST7789 : public Adafruit_GFX {
   Arduino_ST7789(int8_t DC, int8_t RST, int8_t CS = -1);
 
   void init(uint16_t width, uint16_t height);
+  void begin() { init(ST7789_TFTWIDTH,ST7789_TFTHEIGHT); }
   void setAddrWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
   void pushColor(uint16_t color);
-  void fillScreen(uint16_t color);
+  void fillScreen(uint16_t color=BLACK);
+  void clearScreen() { fillScreen(BLACK); }
   void drawPixel(int16_t x, int16_t y, uint16_t color);
   void drawFastVLine(int16_t x, int16_t y, int16_t h, uint16_t color);
   void drawFastHLine(int16_t x, int16_t y, int16_t w, uint16_t color);
@@ -111,6 +113,7 @@ class Arduino_ST7789 : public Adafruit_GFX {
   uint16_t Color565(uint8_t r, uint8_t g, uint8_t b);
   uint16_t color565(uint8_t r, uint8_t g, uint8_t b) { return Color565(r, g, b); } 
   void rgbWheel(int idx, uint8_t *_r, uint8_t *_g, uint8_t *_b);
+  uint16_t rgbWheel(int idx);
 
  protected:
   uint8_t  _colstart, _rowstart, _xstart, _ystart;
