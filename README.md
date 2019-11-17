@@ -21,7 +21,7 @@ Use "#define CS_ALWAYS_LOW" for LCD boards where CS pin is internally connected 
 - idleDisplay() - saves power by limiting colors to 3 bit mode (8 colors)
 - resetDisplay() - software reset
 - partialDisplay() and setPartArea() - limiting display area for power saving
-- setScrollArea() and setScroll(uint16_t vsp) - smooth vertical scrolling
+- setScrollArea() and setScroll() - smooth vertical scrolling
 - fast drawImage() from RAM
 - fast drawImage() from flash (PROGMEM)
 
