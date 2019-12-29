@@ -36,3 +36,7 @@ Use "#define CS_ALWAYS_LOW" for LCD boards where CS pin is internally connected 
  |#05| RES|D8 or any digital|
  |#06| DC|D7 or any digital|
  |#07| BLK | NC|
+
+If you find it useful and want to buy me a coffee or a beer:
+
+https://www.paypal.me/cbm80amiga
