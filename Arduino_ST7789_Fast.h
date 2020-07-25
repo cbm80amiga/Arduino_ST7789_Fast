@@ -87,16 +87,19 @@ class Arduino_ST7789 : public Adafruit_GFX {
 
   void init(uint16_t width, uint16_t height);
   void begin() { init(ST7789_TFTWIDTH,ST7789_TFTHEIGHT); }
+  void init() { init(ST7789_TFTWIDTH,ST7789_TFTHEIGHT); }
   void setAddrWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
   void pushColor(uint16_t color);
   void fillScreen(uint16_t color=BLACK);
   void clearScreen() { fillScreen(BLACK); }
+  void cls() { fillScreen(BLACK); }
   void drawPixel(int16_t x, int16_t y, uint16_t color);
   void drawFastVLine(int16_t x, int16_t y, int16_t h, uint16_t color);
   void drawFastHLine(int16_t x, int16_t y, int16_t w, uint16_t color);
   void fillRect(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color);
   void drawImage(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t *img);
   void drawImageF(int16_t x, int16_t y, int16_t w, int16_t h, const uint16_t *img16);
+  void drawImageF(int16_t x, int16_t y, const uint16_t *img16) { drawImageF(x,y,pgm_read_word(img16),pgm_read_word(img16+1),img16+3); } 
   void setRotation(uint8_t r);
   void invertDisplay(boolean mode);
   void partialDisplay(boolean mode);
