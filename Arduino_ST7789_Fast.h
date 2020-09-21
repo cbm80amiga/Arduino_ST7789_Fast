@@ -35,12 +35,12 @@
 #define YELLOW  0xFFE0
 #define WHITE   0xFFFF
 
-#define	GREY  RGBto565(128,128,128);
-#define	LGREY RGBto565(160,160,160);
-#define	DGREY RGBto565( 80, 80, 80);
+#define	GREY  RGBto565(128,128,128)
+#define	LGREY RGBto565(160,160,160)
+#define	DGREY RGBto565( 80, 80, 80)
 
-#define	LBLUE RGBto565(100,100,255);
-#define	DBLUE RGBto565(  0,  0,128);
+#define	LBLUE RGBto565(100,100,255)
+#define	DBLUE RGBto565(  0,  0,128)
 
 class Arduino_ST7789 : public Adafruit_GFX {
 
