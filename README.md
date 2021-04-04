@@ -1,7 +1,7 @@
 # Arduino_ST7789_Fast
 Fast SPI library for the ST7789 240x240 IPS display
 
-Significantly optimized for 16MHz AVR Arduino boards (2.5-5x faster than other libraries)
+Significantly optimized for 16MHz **AVR Arduino boards** (2.5-5x faster than other libraries)
 
 Achieved 6.9Mbps SPI transfer rate (at DIV2/16MHz clock)
 
@@ -20,11 +20,12 @@ After recent optimizations (more AVR assembler) all fill and copy operations wor
 ## Configuration
 
 Use "define COMPATIBILITY_MODE" - then the library should work on all Arduino compatible boards
+
 Remove above for the best performance on 16MHz AVR
 
 Use "#define CS_ALWAYS_LOW" for LCD boards where CS pin is internally connected to the ground, it gives better performance
 
-Tested with Arduino IDE 1.6.5 and Adafruit_GFX 1.5.6
+Tested with **Arduino IDE 1.6.5 and Adafruit_GFX 1.5.6**
 
 ## Extra Features
 - invertDisplay()
