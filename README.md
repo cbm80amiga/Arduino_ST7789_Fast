@@ -52,7 +52,6 @@ Tested with **Arduino IDE 1.6.5 and Adafruit_GFX 1.5.6**
  |#06| DC|D7 or any digital|
  |#07| BLK | NC|
 
-[![Github All Releases](https://img.shields.io/github/downloads/cbm80amiga/Arduino_ST7789_Fast/total.svg)]()
 
 If you find it useful and want to buy me a coffee or a beer:
 
