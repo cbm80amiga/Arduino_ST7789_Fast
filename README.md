@@ -1,4 +1,9 @@
 # Arduino_ST7789_Fast
+
+### This library is obsolete. Use newer version available here: ###
+## https://github.com/cbm80amiga/ST7789_AVR ##
+
+
 Fast SPI library for the ST7789 240x240 IPS display
 
 Significantly optimized for 16MHz **AVR Arduino boards** (2.5-5x faster than other libraries).
